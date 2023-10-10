@@ -1,0 +1,33 @@
+Loading and checking parameter files for compatibility...
+sander found! Using /pkg/suse12/software/Amber/18-foss-2019b-AmberTools-19-patchlevel-12-17-Python-2.7.16/bin/sander
+cpptraj found! Using /pkg/suse12/software/Amber/18-foss-2019b-AmberTools-19-patchlevel-12-17-Python-2.7.16/bin/cpptraj
+Preparing trajectories for simulation...
+12661 frames were processed by cpptraj for use in calculation.
+
+Running calculations on normal system...
+
+Beginning GB calculations with /pkg/suse12/software/Amber/18-foss-2019b-AmberTools-19-patchlevel-12-17-Python-2.7.16/bin/sander
+  calculating complex contribution...
+  calculating receptor contribution...
+  calculating ligand contribution...
+
+Beginning PB calculations with /pkg/suse12/software/Amber/18-foss-2019b-AmberTools-19-patchlevel-12-17-Python-2.7.16/bin/sander
+  calculating complex contribution...
+  calculating receptor contribution...
+  calculating ligand contribution...
+
+Timing:
+Total setup time:                           0.006 hr.
+Creating trajectories with cpptraj:         0.030 hr.
+Total calculation time:                     4.664 hr.
+
+Total GB calculation time:                  0.736 hr.
+Total PB calculation time:                  3.588 hr.
+
+Statistics calculation & output writing:    0.092 hr.
+Total time taken:                           4.796 hr.
+
+
+MMPBSA.py Finished! Thank you for using. Please cite us if you publish this work with this paper:
+   Miller III, B. R., McGee Jr., T. D., Swails, J. M. Homeyer, N. Gohlke, H. and Roitberg, A. E.
+   J. Chem. Theory Comput., 2012, 8 (9) pp 3314--3321

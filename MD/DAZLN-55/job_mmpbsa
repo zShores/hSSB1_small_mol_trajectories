@@ -1,0 +1,14 @@
+#!/bin/bash -l
+#PBS -N DAZLN55_mmpbsa
+#PBS -l walltime=160:00:00
+#PBS -l select=1:ncpus=40:mpiprocs=40:mem=300gb
+#PBS -j oe
+
+module purge
+module load amber/18-foss-2019b-ambertools-19-patchlevel-12-17-python-2.7.16
+
+cd $PBS_O_WORKDIR
+
+mpirun -np 40 $AMBERHOME/bin/MMPBSA.py.MPI -O -i mmpbsa.in -o RESULTS_MMPBSA.dat -cp complex.prmtop \
+             -rp receptor.prmtop -lp ligand.prmtop -y *.netcdf -do DECMP_MMPBSA.dat \
+             -deo decomp_energy.csv > progress.log
